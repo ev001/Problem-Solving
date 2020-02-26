@@ -29,4 +29,15 @@ for i in a:
     초등부 문제라고 자만해 너무 많은 시간을 썼다.
     
     배열을 가지고 노는 문제를 더 풀어봐야겠다.
+    
+    * other code *
+    
+    text = []
+    for i in range(5):
+        text.append(input())
+
+    for i in range(max([len(e) for e in text])):
+        for j in range(5):
+            if i < len(text[j]):
+                print(text[j][i], end="")
 '''
