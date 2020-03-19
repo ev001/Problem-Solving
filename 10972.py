@@ -1,3 +1,5 @@
+# 다음 순열
+
 import sys
 
 input = sys.stdin.readline
@@ -26,6 +28,6 @@ def next_permutation(n):
 
 
 if next_permutation(n):
-    print(arr)
+    print(" ".join(map(str, arr)))
 else:
     print(-1)
