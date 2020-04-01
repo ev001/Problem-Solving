@@ -56,3 +56,44 @@ for i in range(len(arr) - 1):
 
 for i in arr:
     print("".join(i))
+
+
+'''
+# 정규표현식을 사용한 풀이
+import sys, re
+input = lambda :sys.stdin.readline().rstrip()
+
+def sol(st):
+    st = re.sub('[A-Z]','',st)
+    sum_ = sum(map(int,st))
+    return sum_
+
+if __name__ == '__main__':
+    n = int(input())
+    res = list()
+    for _ in range(n):
+        a = input()
+        temp = [len(a), sol(a), a]
+        res.append(temp)
+    res.sort()
+    for i in res:
+        print(i[2])
+
+# 다른 풀이
+n=int(input())
+
+arry=[]
+for _ in range(n):
+    count=0
+    a=input()
+    for i in a:
+       if i.isdigit():
+           count+=int(i)
+    arry.append([a,count])
+
+arry.sort(key=lambda arry:(len(arry[0]),arry[1],arry[0]))
+
+for x in arry:
+    print(x[0])
+
+'''
