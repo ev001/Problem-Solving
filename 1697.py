@@ -1,3 +1,8 @@
+'''
+    풀었음
+    2020.3.02, 2020.3.28
+'''
+
 # 숨바꼭질 #bfs
 import sys
 from collections import deque
